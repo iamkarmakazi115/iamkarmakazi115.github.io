@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Castro - Contact</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="assets/videos/FlowingBlackLiquid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="side-nav">
+        <ul>
+            <li><a href="index.html" class="nav-btn">Home</a></li>
+            <li><a href="about.html" class="nav-btn">About Me</a></li>
+            <li><a href="art.html" class="nav-btn">Art</a></li>
+            <li><a href="contact.html" class="nav-btn active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+        <div class="contact-container">
+            <h1 class="page-title">Get In Touch</h1>
+            
+            <div class="contact-layout">
+                <div class="contact-form-section">
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="10" maxlength="1000" required placeholder="Your message here..."></textarea>
+                            <div class="char-counter">
+                                <span id="char-count">0</span> / 1000 characters
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <div class="phone-contact">
+                        <h3>Direct Contact</h3>
+                        <p class="phone-number">
+                            <span class="contact-icon">📱</span>
+                            Text or Call: <a href="tel:3462030833">(346) 203-0833</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>
